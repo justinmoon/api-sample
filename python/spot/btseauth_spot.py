@@ -2,19 +2,22 @@ import hmac
 import time
 import hashlib
 
-#Production
-BTSE_Endpoint = 'https://api.btse.com/spot'
-BTSE_WSEndpoint = 'wss://ws.btse.com'
-
+# Production
+# BTSE_Endpoint = 'https://api.btse.com/spot'
+# BTSE_WSEndpoint = 'wss://ws.btse.com'
 
 # Testnet
-# BTSE_WSEndpoint = 'wss://testws.btse.io'
-# BTSE_Endpoint = 'https://testapi.btse.io/spot'
+BTSE_WSEndpoint = 'wss://testws.btse.io'
+BTSE_Endpoint = 'https://testapi.btse.io/spot'
+
+# Credentials
+KEY = "fdb0deaa2febccfd22449291e3c5efac6247146fcdb6b53137cfaca47908659a"
+SECRET = "658c5682f8341e6067ceee830152408ab0dd0dab907a480b38e6c35d9b40e0d8"
 
 # API Keys
 keypair = {
-    'API-KEY': '',
-    'API-PASSPHRASE': ''
+    'API-KEY': KEY,
+    'API-PASSPHRASE': SECRET
 }
 
 
